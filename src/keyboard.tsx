@@ -301,9 +301,9 @@ const LicenseKeyboard = React.memo((props: KeyboardProps) => {
                 className="vehicle-plate-keyboard-container"
             >
                 <section className="confirm" onClick={handleDone}>
-                    <p style={props.confirmButtonStyle}>
+                    <span style={props.confirmButtonStyle}>
                         {props.confirmButtonText || '确认'}
-                    </p>
+                    </span>
                 </section>
                 <section className="keyboard">{renderKeyboard()}</section>
             </section>,
