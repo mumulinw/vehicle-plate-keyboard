@@ -11,6 +11,8 @@
     "start": "webpack",
     "build:watch": "webpack --watch --info-verbosity verbose",
     "build": "rimraf dist && NODE_ENV=production webpack",
+    "prebuild": "npm run clean",
+    "prepare": "npm run build",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
